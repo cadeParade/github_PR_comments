@@ -30,5 +30,6 @@ for comment in r.json():
 for file, comments in files.items():
   print file
   for comment in comments:
-    print "    %s:" % comment['author']
+    print "- [ ]    %s:" % comment['author']
     print "        --%s" % comment['text']
+  print "\n\n\n"
